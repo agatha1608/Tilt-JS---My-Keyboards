@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- My Link CSS-->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Link Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+    <title>Coba Tilt JS</title>
+  </head>
+  <body>
+    <section id="my-keyboards">
+        <div class="container">
+            <div class="row text-center mb-3">
+                <div class="col">
+                    <h2 class="h2">My Keyboards</h2>
+                </div>
+            </div>
+
+        <div class="row">
+            <div class="col-md-6 col-lg-4 mb-3">
+                <div class="keyboard-box">
+                    <h4 class="keyboard-name">Keychron K87</h3>
+                    <img src="img/1.png" alt="Keychron K87" class="keyboard-img">
+                    <a href="#" class="btn btn-light keyboard-detail-button">Show Details</a>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-3">
+                <div class="keyboard-box">
+                    <h4 class="keyboard-name">Keychron K104</h3>
+                    <img src="img/2.png" alt="Keychron K104" class="keyboard-img">
+                    <a href="#" class="btn btn-light keyboard-detail-button">Show Details</a>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-3">
+                <div class="keyboard-box">
+                    <h4 class="keyboard-name">Keychron K552</h3>
+                    <img src="img/3.png" alt="Keychron K552" class="keyboard-img">
+                    <a href="#" class="btn btn-light keyboard-detail-button">Show Details</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Tilt JS -->
+    <script type="text/javascript" src="vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+	VanillaTilt.init(document.querySelectorAll(".keyboard-box"), {
+		max: 35,
+		speed: 500,
+        scale: 1.1,
+	});
+    </script>
+  </body>
+</html>
